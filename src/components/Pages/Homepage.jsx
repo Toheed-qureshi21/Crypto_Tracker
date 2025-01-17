@@ -5,7 +5,7 @@ import CoinsTable from '../UI/CoinsTable'
 
 const Homepage = () => {
   return (
-    <main className='min-h-screen h-auto  bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900'>
+    <main className='min-h-screen h-auto w-lvw  bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900'>
        <section id='banner' className='h-[60vh] w-full flex flex-col items-center justify-center gap-[2rem]  text-white'>
       <Banner/>
       <Crousel/>

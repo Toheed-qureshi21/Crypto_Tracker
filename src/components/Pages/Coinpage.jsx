@@ -26,7 +26,7 @@ const Coinpage = () => {
 
   return ( 
     
-      <main className='min-h-lvh pb-20 py-8 w-full bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-white grid xl:grid-cols-2 place-items-center gap-[2rem] '>
+      <main className='min-h-lvh pb-20 py-8 w-lvw bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-white grid xl:grid-cols-2 place-items-center gap-[2rem] '>
       {data && data.length>0 && (
         <>
       <div className='font-bold flex flex-col gap-2 sm:text-3xl h-fit rounded-md '>
