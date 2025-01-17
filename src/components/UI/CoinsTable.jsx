@@ -3,12 +3,11 @@ import React, {useState } from 'react';
 import { coinList } from '../../config/api';
 import { addComma } from './Crousel';
 import { NavLink } from 'react-router-dom';
-import Loading from './Loading';
 
 const CoinsTable = () => {
   const [search, setSearch] = useState("")
   const [page, setPage] = useState(0);
-  const { data,isLoading } = useQuery({
+  const { data, } = useQuery({
     queryKey: ['table-coins', page],
     queryFn: ()=>coinList(page),
     staleTime: 5 * 60 * 1000,
@@ -17,9 +16,7 @@ const CoinsTable = () => {
   const searchedData = data?.filter((curr) => {
     return curr.name.toLowerCase().includes(search.toLowerCase()) || curr.symbol.toLowerCase().includes(search.toLowerCase())
   });
-  if (isLoading) {
-    return <Loading/>
-  }
+
   return (
     <>
   <div className="relative w-full max-w-xs ">

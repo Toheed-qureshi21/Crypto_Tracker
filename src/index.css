@@ -7,7 +7,17 @@
     box-sizing: border-box;
 }
     
-/* #banner{
-    background-image: url('../public/banner.webp');
-    height: 40%;
-} */
+@keyframes loading {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .animate-loading {
+    width: 100%;
+    animation: loading 1.5s linear infinite;
+  }
+  
