@@ -41,7 +41,6 @@ const Crousel = () => {
                     <>
                       {(isLoading || isFetching) && (
                           <div className="flex flex-col items-center justify-center min-h-screen bg-inherit">
-                          {/* Animated Loading Text */}
                           <div className="mb-4 text-lg  text-white font-bold animate-bounce">
                            Wait...
                           </div>
